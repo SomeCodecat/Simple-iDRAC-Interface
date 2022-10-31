@@ -23,3 +23,7 @@ Dependencies for the [Default] version:
 <br>pip install pyfiglet
 
 <br>Open the downloaded Python script and set the Hostname [HOST] (iDRAC IP) to your desired value.
+
+# Want to use both versions?
+
+Download sii.bat and set the path to the folder containing both files.
