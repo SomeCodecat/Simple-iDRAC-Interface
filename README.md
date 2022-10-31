@@ -15,6 +15,9 @@ There are two Versions of the Software:
 	
 # Setup
 
+Dependencies for both versions:
+<br>Ipmitool should be installed and be available in $PATH
+
 Dependencies for the [Default] version:
 <br>pip install termcolor
 <br>pip install pyfiglet
