@@ -17,17 +17,20 @@ def welcome():
     print(colored("Copyright (c) 2022 SomeCatThatCodes", "cyan"))
 
 
-def login():
+def user():
+    user = input("\nEnter your Username: ")
+
+    return user
+
+
+def auth():
     # Let the user enter their password (noecho)
-    pw = getpass.getpass("\nEnter IPMI (iDRAC) Password: ")
+    pw = getpass.getpass("Enter IPMI (iDRAC) Password: ")
 
     return pw
 
 
-def constructFinalCommand(pw, command):
-    # Change the user to login with
-    USER = "root"
-
+def constructFinalCommand(user, pw, command):
     # Change change the adress of the host machine
     HOST = "0.0.0.0"
 
@@ -37,7 +40,7 @@ def constructFinalCommand(pw, command):
     # Replace the placeholders with the right values
     comm = comm.replace(
         "host__", HOST).replace(
-        "user__", USER).replace(
+        "user__", user).replace(
         "pw__", pw).replace(
         "comm__", command)
 
@@ -81,7 +84,7 @@ def chooseCommand():
 # Main function calling welcome and executing the command in the console
 def main():
     welcome()
-    os.system(constructFinalCommand(login(), chooseCommand()))
+    os.system(constructFinalCommand(user(), auth(), chooseCommand()))
 
 
 # Calling the main function
