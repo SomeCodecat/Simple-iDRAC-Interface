@@ -19,4 +19,4 @@ Dependencies for the [Default] version:
 <br>pip install termcolor
 <br>pip install pyfiglet
 
-<br>Open the downloaded Python script and set the Hostname [HOST] (iDRAC IP) and the [USER] (Default: "root") to your desired values.
+<br>Open the downloaded Python script and set the Hostname [HOST] (iDRAC IP) to your desired value.
