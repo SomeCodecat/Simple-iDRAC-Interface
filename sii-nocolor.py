@@ -23,11 +23,8 @@ def auth():
 
 
 def constructFinalCommand(user, pw, command):
-    # Change the user to login with
-    USER = "root"
-
     # Change change the adress of the host machine
-    HOST = "0.0.0.0"
+    HOST = "192.168.1.21"
 
     # Base command to execute commands with IPMI v2 / RMCP+
     comm = """ipmitool -I lanplus -v -H host__ -U user__ -P pw__ comm__"""
