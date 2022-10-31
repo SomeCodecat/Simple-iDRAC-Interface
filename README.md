@@ -27,3 +27,5 @@ Dependencies for the [Default] version:
 # Want to use both versions?
 
 Download sii.bat and set the path to the folder containing both files.
+
+Start the [Nocolor] version with the -nocolor or -n flag.
