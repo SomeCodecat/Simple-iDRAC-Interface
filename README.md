@@ -1,5 +1,5 @@
 # Simple-iDRAC-Interface
-A small commandline application to manage your Dell server.
+A small commandline application written in Python to manage your Dell server.
 
 Features include:
 	<br>- Monitoring system status
