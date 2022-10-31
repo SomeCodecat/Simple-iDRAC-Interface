@@ -13,7 +13,7 @@ There are two Versions of the Software:
 	<br>[Nocolor]
 	<br>- The other one is kept simple and uses minimal external packages.
 	
-#Setup
+# Setup
 
 Dependencies for the [Default] version:
 <br>pip install termcolor
