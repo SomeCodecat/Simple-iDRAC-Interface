@@ -8,5 +8,7 @@ Features include:
 	<br>- Issuing custom commands
 
 There are two Versions of the Software:
-	-  One is styled and and uses external packages that have to be installed with pip.
-	- The other one is kept simple and uses minimal external packages.
+	[Default]
+	<br>- One is styled and and uses external packages that have to be installed with pip.
+	[Nocolor]
+	<br>- The other one is kept simple and uses minimal external packages.
