@@ -14,7 +14,7 @@ def welcome():
     figure = Figlet(font='isometric4')
     print(colored(figure.renderText('SiI'), "magenta"))
     print("Welcome to the", colored("Simple iDRAC Interface", "blue"))
-    print(colored("Copyright (c) 2022 Maximilian Liebmann", "cyan"))
+    print(colored("Copyright (c) 2022 SomeCatThatCodes", "cyan"))
 
 
 def login():
@@ -29,7 +29,7 @@ def constructFinalCommand(pw, command):
     USER = "root"
 
     # Change change the adress of the host machine
-    HOST = "192.168.1.21"
+    HOST = "0.0.0.0"
 
     # Base command to execute commands with IPMI v2 / RMCP+
     comm = """ipmitool -I lanplus -v -H host__ -U user__ -P pw__ comm__"""

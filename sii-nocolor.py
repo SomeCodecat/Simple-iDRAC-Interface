@@ -6,7 +6,7 @@ import msvcrt as m
 def welcome():
     # Welcome Message
     print("Welcome to the Simple iDRAC Interface\n")
-    print("Copyright (c) 2022 Maximilian Liebmann")
+    print("Copyright (c) 2022 SomeCatThatCodes")
 
 
 def login():
@@ -21,7 +21,7 @@ def constructFinalCommand(pw, command):
     USER = "root"
 
     # Change change the adress of the host machine
-    HOST = "192.168.1.21"
+    HOST = "O.O.O.O"
 
     # Base command to execute commands with IPMI v2 / RMCP+
     comm = """ipmitool -I lanplus -v -H host__ -U user__ -P pw__ comm__"""
