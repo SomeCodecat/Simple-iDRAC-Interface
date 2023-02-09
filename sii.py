@@ -58,21 +58,19 @@ def chooseCommand():
         "[2]", numberColor), "ON        Turn on remote system\n", colored(
         "[3]", numberColor), "OFF       Turn off remote system\n", colored(
         "[4]", numberColor), "COMMAND   Enter a custom command\n\n", colored(
-        "[ESC]", exitColor), "EXIT    Exit program")
+        "[5]", exitColor), "EXIT    Exit program")
 
     # Wait for a key to be pressed (escape keys are Ctrl+C and ESC)
-    match m.getch():
-        case b"1":
+    match input(""" \nEnter Number: """):
+        case "1":
             chosenCommand = "chassis status"
-        case b"2":
+        case "2":
             chosenCommand = "chassis power on"
-        case b"3":
+        case "3":
             chosenCommand = "chassis power off"
-        case b"4":
+        case "4":
             chosenCommand = input(colored("\nEnter your command: ", "yellow"))
-        case b"\x1b":
-            exit()
-        case b"\x03":
+        case "5":
             exit()
         case _:
             print("Please enter a valid number.")
